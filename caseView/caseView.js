@@ -16,7 +16,7 @@ export default class CaseView extends LightningElement {
 
     connectedCallback()
     {
-        getCases(/*{recordTypeIdSet : recordTypes, categorySet : categories, statusSet : statuses}*/).then(result => {
+        getCases().then(result => {
             let tempRecs = [];
             result.forEach(record => {
                 let tempRec = Object.assign( {}, record );
