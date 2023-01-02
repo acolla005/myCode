@@ -1,0 +1,6 @@
+public class CaseViewController{
+    @AuraEnabled
+    public static List<Case> getCases(){
+        return [SELECT Id, CaseNumber, Status FROM Case];
+    }
+}
