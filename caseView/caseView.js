@@ -8,7 +8,6 @@ export default class CaseView extends LightningElement {
 
     caseColumns = [
         { label: 'Case Number', fieldName: 'RecordName', type: 'url', typeAttributes: { label: { fieldName: 'CaseNumber' }, target: '_blank'}, sortable: "true"},
-        { label: "Record Type", fieldName: "RecordTypeName", editable : false },
         { label: "Status", fieldName: "Status", editable : false }
     ]
 
