@@ -18,7 +18,6 @@ export default class CaseView extends LightningElement {
             result.forEach(record => {
                 let tempRec = Object.assign( {}, record );
                 tempRec.RecordName = '/' + tempRec.Id;
-                tempRec.RecordTypeName = tempRec.RecordType.DeveloperName;
                 tempRecs.push( tempRec );
             });
             this.caseData = tempRecs;
